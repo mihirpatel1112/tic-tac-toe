@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ##Live Project Link
 
-https://tic-tac-cahuno33b-mihirs-projects-a90d0269.vercel.app/
+https://tic-tac-6h7gf2hfp-mihirs-projects-a90d0269.vercel.app/
 
 ## Available Scripts
 
