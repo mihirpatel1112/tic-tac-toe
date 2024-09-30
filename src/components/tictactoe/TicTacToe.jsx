@@ -35,9 +35,13 @@ const TicTacToe = () => {
       data[num] = "o";
       setCount(++count);
     }
-    if(count === 9){
-        draw();
+
+    if (count === 9 && lock === false) {
+      titleRef.current.innerHTML = `Sorry draw &#128532`;
+      setLock(true);
+      setCount(0);
     }
+
     checkWin();
   };
 
@@ -68,10 +72,6 @@ const TicTacToe = () => {
     } else {
       titleRef.current.innerHTML = `Congratulations: <img src='${o}'> &#127881`;
     }
-  };
-
-  const draw = () => {setLock(true);
-    titleRef.current.innerHTML = `Sorry draw &#128532`;
   };
 
   const reset = (e) => {
